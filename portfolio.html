@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--Icon-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
+    <!--Fontawesome cdnjs -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <!--CSS links--->
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/glide.core.min.css">
+    <link rel="stylesheet" href="/css/glide.theme.min.css">
+    <!--JS imports--->
+    <script src="/js/glide.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title>Homepage</title>
+</head>
+<body>
+
+<!-------My Navigation Bar-->
+<nav class="navbar navbar-expand-lg navbar-light navbar-light sticky-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Dev James</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto text-left">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Here's my web</a>
+            </li>
+          </ul>
+        </div>
+  </div>
+</nav>
+
+<!------Header-->
+<div class="home">
+  <div>
+    <!----<img class="img_home" src="" alt="ResumePhoto2">---->
+  </div>
+    <div class="content_home">
+      <h2>Hi I'am James</h2>
+        <h1>Frontend Developer</h3>
+          <p>Average level experience in web design
+             and development knowledge, and
+
+             design and development knowledge,
+             producing quality work.</p>
+            <button href="#contact" type="button" class="btn btn-outline-dark btn--flex">Contact Me
+              <i class="uil uil-message"></i></button>
+      </div>        
+</div>
+
+<!--------ABOUT--ME-------->
+<div class="card-container">
+  <a name="About"></a>
+   <h2 class="row-title" style="font-family:'Rubik';">About me</h2>
+    <div class="row gutters-sm">
+        <div class="col-md-4 mb-3">
+          <div class="card h-100">
+            <div class="card-body">
+              <div class="d-flex flex-column align-items-center text-center">
+                <img src="/img/ResumePhoto2.jpg" alt="Admin" class="rounded-2" width="150">
+                <div class="mt-3">
+                  <h4>James Lumacang</h4>
+                  <p class="text-secondary mb-1">Frontend Developer</p>
+                  <p class="text-muted font-size-sm">Caloocan City, Katarungan Rd. PH</p>
+                  <a href="/cv/James Lumacang_CV.pdf" download rel="noopener noreferrer" target="_blank">
+                    <buttontype="button" class="btn btn-outline-dark btn--flex" style="font-family: 'Rubik';">Download CV
+                    <i class="uil uil-download-alt"></i></button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3 ">
+          <div class="card w-100 h-100">
+            <div class="card-body">
+                <div class="process-wrapper">
+                <div id="progress-bar-container">
+                  <ul>
+                    <li class="step step01 active"><div class="step-inner">MY INTRO</div></li>
+                    <li class="step step02"><div class="step-inner">PRIMARY</div></li>
+                    <li class="step step03"><div class="step-inner">SECONDARY</div></li>
+                    <li class="step step04"><div class="step-inner">TERTIARY</div></li>
+                    <li class="step step05"><div class="step-inner">MY WORK</div></li>
+                  </ul>
+                  <div id="line">
+                    <div id="line-progress"></div>
+                  </div>
+                </div>
+                <div id="progress-content-section">
+                  <div class="section-content discovery active">
+                    <h2>MY INTRODUCTION</h2>
+                    <p class="paragraph">Hi I'am James Lumacang Frontend Developer, I'm offering a good service for any kinds of Web Design.</p>
+                  </div>
+                  
+                  <div class="section-content strategy">
+                    <h2>PRIMARY</h2>
+                    <p>I'am Graduated in Pag-asa Elementary School year 2002-2008</p>
+                  </div>
+                  
+                  <div class="section-content creative">
+                    <h2>SECONDARY</h2>
+                    <p>I'am Graduate in Tala High School year 2015</p>
+                  </div>
+                  
+                  <div class="section-content production">
+                    <h2>TERTIARY</h2>
+                    <p>I'am Graduate in University of Caloocan City year 2017-2021</p>
+                  </div>
+                  
+                  <div class="section-content analysis">
+                    <h2>MY WORK</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae quod adipisci enim tempore? Nesciunt cum, praesentium alias commodi deserunt culpa.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="card w-100 h-100">
+            <div class="card-body">
+              <form class="card-client-form" action="/php/client.php" method="POST" enctype="multipart/form-data">
+                <div class="mb-3">
+                  <label for="exampleFormControlInput1" class="form-label">Email address</label> 
+                  <input type="email" name="email" class="form-control" id="exampleFormControlInput1" placeholder="Email@example.com">
+                </div>
+                <div class="mb-3">  
+                  <label for="exampleFormControlTextarea1" class="form-label">Request message</label>
+                  <textarea type="message" name="message" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <div class="mb-3">
+                  <label for="formFile" class="form-label">Upload your file</label>
+                  <input class="form-control" type="file" name="file" id="file" value="required">
+                </div>
+                <div class="mb-3">
+                  <input type="checkbox" name="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>
+                <div class="mb-3">
+                  <button type="submit" name="submit" class="btn btn-outline-dark btn--flex" style="font-family: 'Rubik';">Submit Here!</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+    </div>
+</div>
+
+<script>
+   $(".step").click( function() {
+   $(this).addClass("active").prevAll().addClass("active");
+   $(this).nextAll().removeClass("active");
+   });
+
+   $(".step01").click( function() {
+   $("#line-progress").css("width", "3%");
+   $(".discovery").addClass("active").siblings().removeClass("active");
+   });
+
+   $(".step02").click( function() {
+   $("#line-progress").css("width", "25%");
+   $(".strategy").addClass("active").siblings().removeClass("active");
+   });
+
+   $(".step03").click( function() {
+   $("#line-progress").css("width", "50%");
+   $(".creative").addClass("active").siblings().removeClass("active");
+   });
+
+   $(".step04").click( function() {
+   $("#line-progress").css("width", "75%");
+   $(".production").addClass("active").siblings().removeClass("active");
+   });
+
+   $(".step05").click( function() {
+   $("#line-progress").css("width", "100%");
+   $(".analysis").addClass("active").siblings().removeClass("active");
+   });
+</script>
+
+<div class="skills-section">
+  <a name="Skills"></a>
+    <div class="skills">
+      <h2 class="skill-title">My skills</h2>
+      <div class="skill">
+        <div class="skill-name">HTML</div>
+          <div class="skill-bar">
+              <div class="progressone"></div>
+              <div class="percentone">70%</div>    
+          </div>
+      </div>
+
+      <div class="skill">
+        <div class="skill-name">CSS</div>
+          <div class="skill-bar">
+              <div class="progresstwo"></div>
+              <div class="percenttwo">65%</div>    
+          </div>
+      </div>
+
+      <div class="skill">
+        <div class="skill-name">JAVASCRIPT</div>
+          <div class="skill-bar">
+              <div class="progressthree"></div>
+              <div class="percentthree">30%</div>    
+          </div>
+      </div>
+
+      <div class="skill">
+        <div class="skill-name">BOOTSTRAP</div>
+          <div class="skill-bar">
+              <div class="progressfour"></div>
+              <div class="percentfour">55%</div>    
+          </div>
+      </div>
+    </div>
+</div>
+
+<div class="glide-title">
+  <h2 style="padding-top: 50px; font-family: sans-serif;">My web design</h2>
+  <div class="glide">
+    <div class="images glide">
+      <div class="glide__track" data-glide-el="track">
+        <ul class="glide__slides" style="padding-top: 20px;">
+          <li class="glide__slide">
+            <img src="/image features/homepage.png" alt="">
+          </li>
+          <li class="glide__slide">
+            <img src="/image features/about.png" alt="">
+          </li>
+          <li class="glide__slide">
+            <img src="/image features/pricing.png" alt="">
+          </li>
+          <li class="glide__slide">
+            <img src="/image features/loginpage.png" alt="">
+          </li>
+          <li class="glide__slide">
+            <img src="/image features/signupage.png" alt="">
+          </li>
+          <li class="glide__slide">
+            <img src="/image features/portfoillio.png" alt="">
+          </li>
+        </ul>
+      </div>
+      <div class="glide__arrows" data-glide-el="controls">
+        <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><i class="fas fa-arrow-left"></i></button>
+        <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i class="fas fa-arrow-right"></i></button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  new Glide(".images",{
+    type: 'carousel',
+    perView: 5,
+    focusAt: 'center',
+    gap: 40,
+    breakpoints: {
+      1200:{
+        perView: 3
+      },
+      800:{
+        perView: 2
+      }
+    }
+  }).mount();
+</script>
+
+    <!----Footer-->
+    <footer class="bg-dark text-white pt-5 pb-4">
+        <div class="container text-center text-md-left">
+          <div class="row text center text-md-left">
+            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+              <h1 class="text-md-left mb-4 font-weight-bold text-light">F.E Dev James</h1>
+              <p class="typography">Average level experience in web design
+                and development knowledge, and
+                design and development knowledge,
+                producing quality work.</p>
+            </div>
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+              <h5 class="text-md-left mb-4 font-weight-bold text-light">Contact</h5>
+            <p>
+              <i class="uil uil-map-marker" style="font-family: 'Rubik';"> Caloocan City, Katarungan St. PH</i>
+            </p>
+            <p>
+              <i class="uil uil-envelope " style="font-family: 'Rubik';"> FE@gmail.com</i>
+            </p>
+            <p>
+              <i class="uil uil-phone" style="font-family: 'Rubik';"> +639154432923</i>
+            </p>
+            </div> 
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+              <h5 class="mb-4 font-weight-bold text-light">Services</h5>
+              <p>Web Design</p>
+              <p>Photoshop</p>
+              <p>Adobe XD</p>
+              <p>Video editing</p>
+            </div>
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+              <h5 class="mb-4 font-weight-bold text-light">Portfolio</h5>
+            </div>
+          </div>
+            <hr class="mb-4">
+            <div class="row align-items-center">
+              <div class="col-md-7 col-lg-8">
+                <p>Copyright @2021 All Rights Reserved By:
+                  <a href="#" style="text-decoration: none;">
+                    <strong class="text-white" style="font-family: 'Rubik';">F.E Dev James</strong>
+                  </a>
+                </p>
+              </div>
+
+              <div class="col-md-5 col-lg-4">
+
+                <div class="text-center text-md-right">
+
+                  <ul class="list-unstyled list-inline">
+
+                    <li class="list-inline-item">
+                      <a href="#" class="btn-floating btn-sm text-white" style="font-size:23px;"><i class="uil uil-facebook"></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="#" class="btn-floating btn-sm text-white" style="font-size:23px;"><i class="uil uil-twitter"></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="#" class="btn-floating btn-sm text-white" style="font-size:23px;"><i class="uil uil-youtube"></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="#" class="btn-floating btn-sm text-white" style="font-size:23px;"><i class="uil uil-instagram"></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="#" class="btn-floating btn-sm text-white" style="font-size:23px;"><i class="uil uil-envelope"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+    </footer>
+    
+     <!-- Option 1: Bootstrap Bundle with Popper -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>

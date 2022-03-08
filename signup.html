@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="/css/signup.css">
+    <title>Sign Up Page</title>
+    <link rel="shortcut icon" href="/img/Web 1920 – 1 (2).jpg" type="image">
+  </head>
+<body>
+<div class="form">
+  <form class="container-form">
+    <h1 class="Signup">Sign-up</h1>
+    <p>To apply for membership please complete all questions.</p>
+      <div style="flex-direction: row; flex: 1; display: flex;">
+        <div style="width: 370px; height: 500px;">
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email.." aria-describedby="emailHelp">
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputUsername" class="form-label">Username</label>
+            <input type="username" class="form-control" id="exampleInputUsername" placeholder="Username..">
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password..">
+          </div>
+          <label for="exampleInputFullName" class="form-label">Full name</label>
+          <div class="mb-3">
+            <input type="firstname" class="form-control" id="exampleInputFullName" placeholder="First Name..">
+            <input type="middlename" class="form-control" id="exampleInputMiddleName" placeholder="Middle Name..">
+            <input type="lastname" class="form-control" id="exampleInputLastName" placeholder="Last Name..">
+          </div>
+          <div class="btn-container">
+            <button type="submit" class="btn" id="submit">Submit</button>
+          </div> 
+        </div>
+        <div style="width: 370px;">
+          <div class="mb-3">
+              <label for="birthday">Birthday</label>
+              <input class="birthday" type="datetime-local" id="birthday" name="birthday">
+          </div>  
+          <div class="mb-3">
+            <label for="exampleInputMobileNumber" class="form-label">Mobile number</label>
+            <input type="mobilenumber" class="form-control" id="exampleInputMobileNumber" placeholder="Mobile number">
+          </div>
+          <label for="exampleInputAddress" class="form-label">Address</label>
+          <div class="mb-3">
+            <input type="streetaddress" class="form-control" id="exampleInputStreetAddress" placeholder="Street Address..">
+            <input type="streetaddress" class="form-control" id="exampleInputStreetAddressLine2" placeholder="Street Address Line2..">
+            <input type="city" class="form-control" id="exampleInputCity" placeholder="City..">
+            <input type="city" class="form-control" id="exampleInputCity" placeholder="State/Province..">
+            <input type="city" class="form-control" id="exampleInputCity" placeholder="Postal Code..">
+          </div>
+            <a href="/html/index.html">
+              <button type="cancel" class="btn" id="cancel">Cancel</button>
+            </a>
+        </div>
+      </div>
+  </form>
+</div>
+
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+  </body>
+</html>

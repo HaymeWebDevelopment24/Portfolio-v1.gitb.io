@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,500;1,600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+	box-sizing: border-box;
+}
+body{
+    background-color: white;
+	height: 100%;
+}
+
+/*NAVIGATION BAR*/
+nav{
+    box-shadow: 0 5px 15px #FF00DE;
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    font-family: 'Rubik';
+    font-style: italic;
+    height: 100%;
+    width: 100%;
+    padding-top: 20px;
+    background: linear-gradient(to bottom, #FF00DE 50%,#fe34c1 100%); 
+}
+.navbar-toggler{
+    border: 3px solid black;
+    margin-right: 15px;
+}
+.navbar-brand{
+    font-weight: 500;
+    font-size: 15pt;
+    padding-top: 20px;
+    margin-bottom: 0;
+    padding-left: .5rem;
+}
+.navbar-nav{
+	padding-right: 5rem;
+	font-size: 15pt;
+  margin-top: 10px;
+}
+.d-inline-block{
+    padding: 0;
+    margin: 0;
+    margin-top: 0;
+    padding-bottom: 5px;
+    margin-right: 10px;
+}
+/* ROUNDED SEARCH BAR*/
+.container .input{
+	border: 0;
+	outline: none;
+	color: #fe34c1;
+}
+.search_wrap{
+	width: 500px;
+}
+.search_wrap .search_box{
+	position: relative;
+	width: 100%;
+  margin-top: 10px;
+	height: 45px;
+}
+
+.search_wrap .search_box .input{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	padding: 10px 20px;
+	border-radius: 3px;
+	font-size: 18px;
+}
+
+.search_wrap .search_box .btn{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 60px;
+	height: 100%;
+	padding-top: 20px;
+	background: #FF00DE;
+	border: #fff;
+	z-index: 1;
+	cursor: pointer;
+}
+
+.search_wrap .search_box .btn:hover{
+	background: #fe34c1;	
+}
+.search_wrap.search_wrap_6 .search_box .input{
+	border-radius: 50px;
+}
+
+.search_wrap.search_wrap_6 .search_box .btn{
+	width: 100px;
+	height: 40px;
+	top: 2.9px;
+	right: 3px;
+	border-radius: 3px;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.search_wrap.search_wrap_6 .search_box .btn{
+	border-radius: 25px;
+}
+.search_wrap.search_wrap_6 .search_box .input{
+	padding-right: 145px;
+}
+/* Section Login Page */
+.login-form{
+	position: relative;
+	margin-top: 100px;
+	min-width: 100%;
+	z-index: 0;
+	background-color: #FF00DE;
+	padding: 20px;
+	justify-content: center;
+	display: grid;
+	grid-template-columns: 1fr auto 1fr;
+	align-items: center;
+}
+.login{
+	width: 100%;
+	margin: 0 auto;
+}
+.context{
+	margin-top: 220px;
+	margin-left: 20px;
+	text-align: center;
+}
+.context h3{
+	color: white;
+	font-size: 40pt;
+	margin: 0;
+	margin-right: 50px;
+}
+.content{
+	flex-basis: 150%;
+	width: 550px;
+	padding: 2em 2em;
+	background-color: white;
+	border-top-left-radius: 8px;
+	border-bottom-left-radius: 8px;
+	border-top-right-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
+.form-img{
+	flex-basis: 100%;
+	background-color: #FF00DE;
+	background-size: cover;
+	border-top-left-radius: 8px;
+	border-bottom-left-radius: 8px;
+	border-top-right-radius: 8px;
+	border-bottom-right-radius: 8px;
+	align-items: center;
+	display: grid;
+	padding: 0;
+}
+.form-img img{
+	width: 250px;
+}
+.login-form h2{
+	font-size: 20px;
+	line-height: 40px;
+	margin-bottom: 5px;
+	font-weight: 500;
+	text-align: center;
+	color: #FF00DE;
+}
+.login-form .main{
+	position: relative;
+	display: flex;
+}
+.btn-signup{
+	color: #FF00DE;
+	font-size: 16px;
+	line-height: 25px;
+	text-align: center;
+}
+.btn-login:hover, button:hover{
+	transition: 0.5s ease;
+}
+a{
+	text-decoration: none;
+}
+.login-form form{
+	margin: 30px 0;
+	padding: 10px;
+}
+.login-form input{
+	outline: none;
+	font-stretch: 16px;
+	color: black;
+	text-align: left;
+	display: inline-block;
+}
+.login-form .input_field{
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+label{
+	margin-bottom: 5px;
+}
+.login-form button{
+	font-size: 18px;
+	color: white;
+	background-color: #FF00DE;
+	width: 100%;
+	height: 40px;
+	margin-bottom: 10px;
+	border: none;
+	font-weight: 500;
+}
+.login-form button:hover{
+	color: #fe34c1;
+	background: transparent;
+	border: 1px solid #fe34c1;
+}
+@media(max-width:736px){
+	h3{
+		color: white;
+		font-size: 40pt;
+		margin: 0;
+		text-align: center;
+	}
+	.login-form .main{
+		flex-direction: column;
+	}
+	.login-form form{
+		margin-top: 30px;
+		margin-bottom: 10px;
+	}
+	.content{
+		order: 1;
+		border-top-left-radius: 8px;
+		border-top-right-radius: 8px;
+		margin-left: 20px;
+	}
+	.context{
+		margin: 0;
+		padding: 0;
+		margin-left: 80px;
+	}
+	.form-img img{
+		width: 0px;
+		height: 0px;
+	}
+}
